@@ -18,7 +18,7 @@ abstract class Drink implements DrinkInterface
 
   public function __construct()
   {
-    Enforcer::__add(__CLASS__, get_called_class());
+    $this->addEnforcer(__CLASS__, get_called_class());
     $this->setPrice(self::PRICE);
   }
 
