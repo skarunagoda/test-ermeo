@@ -41,17 +41,17 @@ class DrinkHandler
     return $drink;
   }
 
-  public function getChocolate()
+  public function getChocolate(): Chocolate
   {
     return new Chocolate();
   }
 
-  public function getCoffee()
+  public function getCoffee(): Coffee
   {
     return new Coffee();
   }
 
-  public function getTea()
+  public function getTea(): Tea
   {
     return new Tea();
   }
