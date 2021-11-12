@@ -4,7 +4,7 @@ namespace App\Traits;
 
 trait EnforcerTrait
 {
-    public static function addEnforcer($class, $c) {
+    public function addEnforcer($class, $c) {
         $reflection = new ReflectionClass($class);
         $constantsForced = $reflection->getConstants();
         foreach ($constantsForced as $constant => $value) {
